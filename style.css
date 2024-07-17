@@ -1,72 +1,5 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Plain Light';
-    color: white;
-}
-html,body{
-    width: 100%;
-    height: 100%;
-}
 
-#loader{
-    width: 100%;
-    height: 100%;
-    z-index: 999;
-    background-color: #030303;
-    position: fixed;
-    padding: 25vh 10vw;
-}
-
-.line{ */
-    /* background-color: red; */
-    /* height: fit-content;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 3vw;
-}
-
-#line-part1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.1vw;
-
-}
-#line-part1 h5, #line-part1 h6{
-    font-size: 3vw;
-    font-family: 'silk serif';
-    font-weight: 100;
-}
-#line-part1 h5{
-    /* background-color: red; 
-    width: 8vw;
-    text-align: right;
-}
-.line h1{
-    font-size: 6.5vw;
-    text-transform: uppercase;
-    font-weight: 900;
-}
-.line h2{
-    font-size: 6.5vw;
-    text-transform: uppercase;
-    font-weight: 900;
-}
-#main{
-    position: relative ;
-    background-color: #030303;
-}
-#page1{
-    height: 100vh;
-    width: 100%;
-    background-color: #151515;
-} */
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -77,6 +10,16 @@ html,body{
 html, body {
     height: 100%;
     width: 100%;
+}
+#crsr{
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+    border: 2px solid orangered;
+    z-index: 9999;
+    position: fixed;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
 }
 #loader{
     height: 100%;
@@ -100,7 +43,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1vw;
+    gap: 2.5vw;
 
 }
 #line1-part1 h5, #line1-part1 h6{
@@ -166,4 +109,56 @@ html, body {
     height: 100vh;
     width: 100%;
     background-color: #151515;
+}
+#nav h1{
+    font-family: 'Extradicta';
+    font-size:5vh ;
+    font-weight: 40;
+}
+
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.3vw 5.5vw;
+}
+
+#nav #nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+#nav #nav-part2 h4{
+    font-weight: 300;
+    font-size: 1vw;
+    /*  */
+}
+#nav #nav-part2 h4 a{
+    text-decoration: none;
+}
+
+.hero{
+     /* background-color: red; */
+     width: 70%;
+     margin-left: 30%;
+     height: fit-content;
+     overflow: hidden;
+     display: flex;
+     align-items: center;
+     /* justify-content: center; */
+}
+.hero:nth-child(2){
+    margin-top: 15vh;
+}
+.hero h2, .hero h3{
+    font-size: 6.2vw;
+    line-height: 6.2vw;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+#hero3 h2:hover{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 400;
 }
