@@ -50,7 +50,7 @@ function loadingAnime(){
         duration:0.5
     })
     tl.from("#hero1 h2, #hero2 h2 , #hero3 h2, #hero4 h2",{
-        y:130,
+        y:160,
         stagger:0.3
     })
 }
@@ -64,7 +64,8 @@ function cusrAnimetion(){
         })
     })
     
-    Shery.makeMagnet("#nav-part2 h4");
+    Shery.makeMagnet("#nav-part2 a");
     Shery.makeMagnet("#nav h1");
 }
 cusrAnimetion();
+
